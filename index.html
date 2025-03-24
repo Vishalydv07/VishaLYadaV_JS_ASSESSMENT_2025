@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="filter-container">
+       
+        <div class="filter-section">
+            <h3>Category</h3>
+            <div class="category-list">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="electronics">Electronics</button>
+                <button class="category-btn" data-category="clothing">Clothing</button>
+            </div>
+        </div>
+
+       
+        <div class="filter-section">
+            <h3>Price Range</h3>
+            <div class="price-filter">
+                <input type="number" id="min-price" placeholder="Min price" min="0">
+                <span>-</span>
+                <input type="number" id="max-price" placeholder="Max price">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="product-grid">
+        <div class="product" data-category="electronics" data-price="299.99">
+            <h3>Headphones</h3>
+            <p>$299.99</p>
+        </div>
+        <div class="product" data-category="electronics" data-price="499.99">
+            <h3>Smartphone</h3>
+            <p>$499.99</p>
+        </div>
+        <div class="product" data-category="electronics" data-price="899.99">
+            <h3>Laptop</h3>
+            <p>$899.99</p>
+        </div>
+        <div class="product" data-category="clothing" data-price="49.99">
+            <h3>T-Shirt</h3>
+            <p>$49.99</p>
+        </div>
+        <div class="product" data-category="clothing" data-price="99.99">
+            <h3>Jacket</h3>
+            <p>$99.99</p>
+        </div>
+        <div class="product" data-category="clothing" data-price="199.99">
+            <h3>Jeans</h3>
+            <p>$199.99</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
